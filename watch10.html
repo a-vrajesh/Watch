@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skylona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function watch() {
+            document.getElementById("watch1").style.display = "block";
+            document.getElementById("watch2").style.display = "none";
+            document.getElementById("watch3").style.display = "none";
+            document.getElementById("watch4").style.display = "none";
+            document.getElementById("watch5").style.display = "none";
+        }
+        function watch1() {
+            document.getElementById("watch1").style.display = "none";
+            document.getElementById("watch2").style.display = "block";
+            document.getElementById("watch3").style.display = "none";
+            document.getElementById("watch4").style.display = "none";
+            document.getElementById("watch5").style.display = "none";
+        }
+        function watch2() {
+            document.getElementById("watch1").style.display = "none";
+            document.getElementById("watch2").style.display = "none";
+            document.getElementById("watch3").style.display = "block";
+            document.getElementById("watch4").style.display = "none";
+            document.getElementById("watch5").style.display = "none";
+        }
+        function watch3() {
+            document.getElementById("watch1").style.display = "none";
+            document.getElementById("watch2").style.display = "none";
+            document.getElementById("watch3").style.display = "none";
+            document.getElementById("watch4").style.display = "block";
+            document.getElementById("watch5").style.display = "none";
+        }
+        function watch4() {
+            document.getElementById("watch1").style.display = "none";
+            document.getElementById("watch2").style.display = "none";
+            document.getElementById("watch3").style.display = "none";
+            document.getElementById("watch4").style.display = "none";
+            document.getElementById("watch5").style.display = "block";
+        }
+        function watch011() {
+            document.getElementById("watch111").style.display = "none";
+            document.getElementById("watch211").style.display = "block";
+            document.getElementById("watch311").style.display = "none";
+            document.getElementById("watch411").style.display = "none";
+        }
+        function watch111() {
+            document.getElementById("watch111").style.display = "block";
+            document.getElementById("watch211").style.display = "none";
+            document.getElementById("watch311").style.display = "none";
+            document.getElementById("watch411").style.display = "none";
+        }
+        function watch211() {
+            document.getElementById("watch111").style.display = "none";
+            document.getElementById("watch211").style.display = "none";
+            document.getElementById("watch311").style.display = "block";
+            document.getElementById("watch411").style.display = "none";
+        }
+        function watch311() {
+            document.getElementById("watch111").style.display = "none";
+            document.getElementById("watch211").style.display = "none";
+            document.getElementById("watch311").style.display = "none";
+            document.getElementById("watch411").style.display = "block";
+        }
+        function watch01() {
+            document.getElementById("watch11").style.display = "block";
+            document.getElementById("watch21").style.display = "none";
+            document.getElementById("watch31").style.display = "none";
+            document.getElementById("watch41").style.display = "none";
+        }
+        function watch11() {
+            document.getElementById("watch11").style.display = "none";
+            document.getElementById("watch21").style.display = "block";
+            document.getElementById("watch31").style.display = "none";
+            document.getElementById("watch41").style.display = "none";
+        }
+        function watch21() {
+            document.getElementById("watch11").style.display = "none";
+            document.getElementById("watch21").style.display = "none";
+            document.getElementById("watch31").style.display = "block";
+            document.getElementById("watch41").style.display = "none";
+        }
+        function watch31() {
+            document.getElementById("watch11").style.display = "none";
+            document.getElementById("watch21").style.display = "none";
+            document.getElementById("watch31").style.display = "none";
+            document.getElementById("watch41").style.display = "block";
+        }
+        function red() {
+            document.getElementById("brown").style.display = "none";
+            document.getElementById("red").style.display = "block";
+            document.getElementById("blue").style.display = "none";
+        }
+        function brown() {
+            document.getElementById("brown").style.display = "block";
+            document.getElementById("red").style.display = "none";
+            document.getElementById("blue").style.display = "none";
+        }
+        function blue() {
+            document.getElementById("brown").style.display = "none";
+            document.getElementById("red").style.display = "none";
+            document.getElementById("blue").style.display = "block";
+        }function showdata(){
+          alert('Sorry in the cart some errors are there !!');
+        }
+        function showdata2(){
+          alert('Sorry you can not buy this product now !!');
+        }
+    </script>
+
+    <style>
+        .small {
+            height: 50px;
+            width: 50px;
+        }
+
+        button:hover {
+            opacity: 50%;
+            transition-duration: 1s;
+        }
+
+        #fafahome:hover {
+            color: red;
+            transition-duration: 1s;
+        }
+        #watch2:hover{
+        height: 500px;
+        width: 400px;
+    }
+        #watch21:hover{
+        height: 500px;
+        width: 400px;
+    }
+        #watch211:hover{
+        height: 500px;
+        width: 400px;
+    }
+    </style>
+</head>
+
+<body
+    style="background-repeat: no-repeat; background-size: 1400px;background-color: rgb(231, 231, 231);">
+    <a style="color: black;" href="index.html">
+        <div id="fafahome" class="fa fa-home" style="top: 5px; position: absolute; font-size: 30px;">
+            <p style="font-size: 15px; position: absolute; left: 25px; top: -3px">&nbsp;Home</p>
+        </div>
+    </a>
+    <div>
+        <p
+            style="position: absolute; top: 50px; text-decoration: underline; font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 71.5px; font-size: larger; color: black; ">
+            Color</p>
+        <a href="#" style="margin: -60px 20px; position: absolute; text-decoration: none; height: 20px; width: 50px;">
+            <p onclick="brown()"
+                style=" background-color: rgb(131, 74, 34); font-family: Georgia, 'Times New Roman', Times, serif; height: 20px; margin-left: -15px;color: white; width: 50px; text-align: center;">
+                Brown</p>
+        </a>
+        <a href="#" style="margin: -60px 85px; position: absolute; text-decoration: none; height: 20px; width: 50px;">
+            <p onclick="red()"
+                style=" background-color: rgb(255, 0, 0); height: 21px; margin-left: -15px;color:white ; font-family: Georgia, 'Times New Roman', Times, serif; width: 50px; text-align: center;">
+                Red</p>
+        </a>
+        <a href="#" style="margin: -60px 150px; position: absolute; text-decoration: none; height: 20px; width: 50px;">
+            <p onclick="blue()"
+                style=" background-color: rgb(49, 49, 116); font-family: Georgia, 'Times New Roman', Times, serif; height: 20px; margin-left: -15px; color: white; width: 50px; text-align: center;">
+                Blue</p>
+        </a>
+    </div>
+
+    <div style="display: none;" id="brown">
+        <div style="margin-top: 150px; margin-left: 70px;">
+
+            <div><img onmouseenter="watch1()" class="small" src="11.jpeg" height="300px" width="200px" alt="watch"></div>
+            <img id="watch2" style="transition-property: all; transition-duration: 1s; z-index: 1; box-shadow: 6px 6px 8px 2px #888888; position: absolute; left: 250px; top: 90px;" src="11.jpeg" height="400px"
+                width="300px" alt="watch">
+
+            <div><img onmouseenter="watch()" class="small" src="12.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch1" style="box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="12.jpeg"
+                height="400px" width="300px" alt="watch">
+
+            <div><img onmouseenter="watch2()" class="small" src="13.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch3" style="box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="13.jpeg"
+                height="400px" width="300px" alt="watch">
+
+            <div><img onmouseenter="watch3()" class="small" src="14.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch4" style="box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="14.jpeg"
+                height="400px" width="300px" alt="watch">
+
+            <div><img onmouseenter="watch4()" class="small" src="15.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch5" style="box-shadow: 6px 6px 8px 2px #888888;box-shadow: 6px 6px 8px 2px #888888; box-shadow: 6px 6px 8px 2px #888888;  display:none; position:absolute; left: 250px; top: 90px;" src="15.jpeg"
+                height="400px" width="300px" alt="watch">
+
+        </div>
+        <div>
+            <p style="text-decoration: line-through; position: absolute; margin: 103px 357px;">&#8377;6,980</p>
+            <p style="position: absolute; margin: 91px 270px; font-size: 30px;">&#8377;1,980</p>
+            <p
+                style="text-align: center; margin-top: 91px; font-size: large; position: absolute; margin-left: 430px; color: green; border: 2px solid green; width: 70px;">
+                72% Off</p>
+        </div>
+        <div
+            style="padding-left: 15px; padding-right: 15px;  right: 270px; top: 55px; font-size: large; font-family: Verdana, Geneva, Tahoma, sans-serif; position: absolute;">
+            <p>
+            <ul>
+                <li>Woman watch</li>
+                <li>Skylonashop Quality Assured</li>
+                <li> Extra 100Rs Off On Prepaid Order</li>
+                <li> Free Shipping</li>
+                <li> Product SKU : Blackgeneva </li>
+                <li> Product Size : FREE</li>
+                <li>Display Type : Analog</li>
+                <li>Occssion : Formal, Casual</li>
+                <li>Watch Type : Wrist Watch</li>
+                <li>Pack Of : 1</li>
+                <li>Mechanism : Japanese Quartz</li>
+                <li>Strap Color : Brown</li>
+                <li>Strap Material : Velvet</li>
+                <li>Case Material : Alloy</li>
+                <li>Warranty : 1 Years</li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <button onclick="showdata()" style="cursor:pointer; position: absolute; background-color: rgb(65, 65, 207); box-shadow: 6px 6px 8px 2px #888888; ; right: 450px; top: 480px; height: 40px; width: 150px;">
+                <a href="#" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: none;"> Add to Card</a>
+            </button>
+            <button onclick="showdata1()" style="cursor:pointer;  position: absolute; box-shadow: 6px 6px 8px 2px #888888; background-color: rgb(255, 102, 0); right: 285px; top: 480px; height: 40px; width: 150px;">
+                <a href="#" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: none;"> Buy Now</a>
+            </button>
+        </div>
+    </div>
+
+    <div id="red" style="display: none;">
+        <div style=" margin-top: 150px; margin-left: 70px;">
+
+            <div><img onmouseenter="watch11()" class="small" src="91.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch21" style="transition-property: all; transition-duration: 1s; z-index: 1; box-shadow: 6px 6px 8px 2px #888888; box-shadow: 6px 6px 8px 2px #888888;   position: absolute; left: 250px; top: 90px;" src="91.jpeg" height="400px"
+                width="300px" alt="watch">
+
+            <div><img onmouseenter="watch01()" class="small" src="94.jpeg" height="300px" width="200px" alt="watch"></div>
+            <img id="watch11" style="box-shadow: 6px 6px 8px 2px #888888; box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="94.jpeg"
+                height="400px" width="300px" alt="watch">
+
+            <div><img onmouseenter="watch21()" class="small" src="92.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch31" style="box-shadow: 6px 6px 8px 2px #888888; box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="92.jpeg"
+                height="400px" width="300px" alt="watch">
+
+            <div><img onmouseenter="watch31()" class="small" src="93.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch41" style="box-shadow: 6px 6px 8px 2px #888888; box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="93.jpeg"
+                height="400px" width="300px" alt="watch">
+
+        </div>
+        <div>
+            <p style="text-decoration: line-through; position: absolute; margin: 157px 357px;">&#8377;6,980</p>
+            <p style="position: absolute; margin: 145px 270px; font-size: 30px;">&#8377;1,980</p>
+            <p
+                style="text-align: center; margin-top: 145px; font-size: large; position: absolute; margin-left: 430px; color: green; border: 2px solid green; width: 70px;">
+                72% Off</p>
+        </div>
+        <div
+            style="padding-left: 15px; padding-right: 15px;  right: 270px; top: 55px; font-size: large; font-family: Verdana, Geneva, Tahoma, sans-serif; position: absolute;">
+            <p>
+            <ul>
+                <li>Woman watch</li>
+                <li>Skylonashop Quality Assured</li>
+                <li> Extra 100Rs Off On Prepaid Order</li>
+                <li> Free Shipping</li>
+                <li> Product SKU : RedGeneva</li>
+                <li> Product Size : FREE</li>
+                <li>Display Type : Analog</li>
+                <li>Occssion : Formal, Casual</li>
+                <li>Watch Type : Wrist Watch</li>
+                <li>Pack Of : 1</li>
+                <li>Mechanism : Japanese Quartz</li>
+                <li>Strap Color : Red</li>
+                <li>Strap Material : Velvet</li>
+                <li>Case Material : Alloy</li>
+                <li>Warranty : 1 Years</li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <button onclick="showdata()" style="cursor:pointer; position: absolute; background-color: rgb(65, 65, 207); box-shadow: 6px 6px 8px 2px #888888; ; right: 450px; top: 480px; height: 40px; width: 150px;">
+                <a href="#" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: none;"> Add to Card</a>
+            </button>
+            <button onclick="showdata1()" style="cursor:pointer;  position: absolute; box-shadow: 6px 6px 8px 2px #888888; background-color: rgb(255, 102, 0); right: 285px; top: 480px; height: 40px; width: 150px;">
+                <a href="#" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: none;"> Buy Now</a>
+            </button>
+        </div>
+    </div>
+
+    <div id="blue" style="display: block;">
+        <div style="margin-top: 150px; margin-left: 70px;">
+
+            <div><img onmouseenter="watch011()" class="small" src="101.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch211" style="transition-property: all; transition-duration: 1s; z-index: 1; box-shadow: 6px 6px 8px 2px #888888;   position: absolute; left: 250px; top: 90px;" src="101.jpeg" height="400px"
+                width="300px" alt="watch">
+
+            <div><img onmouseenter="watch111()" class="small" src="103.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch111" style="box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="103.jpeg"
+                height="400px" width="300px" alt="watch">
+
+            <div><img onmouseenter="watch211()" class="small" src="102.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch311" style="box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="102.jpeg"
+                height="400px" width="300px" alt="watch">
+
+            <div><img onmouseenter="watch311()" class="small" src="104.jpeg" height="300px" width="200px" alt="watch">
+            </div>
+            <img id="watch411" style="box-shadow: 6px 6px 8px 2px #888888; display: none; position: absolute; left: 250px; top: 90px;" src="104.jpeg"
+                height="400px" width="300px" alt="watch">
+
+        </div>
+        <div>
+            <p style="text-decoration: line-through; position: absolute; margin: 157px 357px;">&#8377;6,980</p>
+            <p style="position: absolute; margin: 145px 270px; font-size: 30px;">&#8377;1,980</p>
+            <p
+                style="text-align: center; margin-top: 145px; font-size: large; position: absolute; margin-left: 430px; color: green; border: 2px solid green; width: 70px;">
+                72% Off</p>
+        </div>
+        <div
+            style="padding-left: 15px; padding-right: 15px;  right: 270px; top: 55px; font-size: large; font-family: Verdana, Geneva, Tahoma, sans-serif; position: absolute;">
+            <p>
+            <ul>
+                <li>Woman watch</li>
+                <li>Skylonashop Quality Assured</li>
+                <li> Extra 100Rs Off On Prepaid Order</li>
+                <li> Free Shipping</li>
+                <li> Product SKU : BLUEGENEVA</li>
+                <li> Product Size : FREE</li>
+                <li>Display Type : Analog</li>
+                <li>Occssion : Formal, Casual</li>
+                <li>Watch Type : Wrist Watch</li>
+                <li>Pack Of : 1</li>
+                <li>Mechanism : Japanese Quartz</li>
+                <li>Strap Color : Blue</li>
+                <li>Strap Material : Velvet</li>
+                <li>Case Material : Alloy</li>
+                <li>Warranty : 1 Years</li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <button onclick="showdata()" style="cursor:pointer; position: absolute; background-color: rgb(65, 65, 207); box-shadow: 6px 6px 8px 2px #888888; ; right: 450px; top: 480px; height: 40px; width: 150px;">
+                <a href="#" style="color:white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: none;"> Add to Card</a>
+            </button>
+            <button onclick="showdata1()" style="cursor:pointer; position: absolute; box-shadow: 6px 6px 8px 2px #888888; background-color: rgb(255, 102, 0); right: 285px; top: 480px; height: 40px; width: 150px;">
+                <a href="#" style="color:white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: none;"> Buy Now</a>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

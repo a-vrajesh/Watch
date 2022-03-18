@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <script>
+function showcart() {
+            alert('Sorry in the cart some errors are there !!');
+        }
+        function showbuy() {
+            alert('Sorry you can not buy this product now !!');
+        }
+    </script>
+    <style>
+        .collection {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 3rem;
+            font-family: 'Rampart One', cursive;
+        }
+
+        body {
+            max-width: 100%;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        li {
+            float: left;
+        }
+
+        section {
+            margin-left: 16rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 80px;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            font-size: 37px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+            overflow: hidden;
+            background-color: rgb(112, 112, 252);
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+
+        .signin {
+            color: black;
+            position: absolute;
+            margin-left: 74rem;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .cart {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: absolute;
+            margin-left: 69rem;
+            color: black;
+            font-size: 30px;
+        }
+
+        .cartnumber {
+            font-size: 12px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+        }
+
+        .watchadd-cart {
+            cursor: pointer;
+            color: gainsboro;
+            font-size: 12px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(65, 65, 207);
+            border-radius: 50px;
+            border: none;
+            height: 30px;
+            width: 80px;
+        }
+
+        .watchbuynow {
+            color: gainsboro;
+            cursor: pointer;
+            background-color: rgb(255, 102, 0);
+            border-radius: 50px;
+            border: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 30px;
+            width: 80px;
+            margin-top: 1rem;
+        }
+
+        .cartsign {
+            font-size: 20px;
+            margin-top: 8px;
+            margin-left: 4px;
+            padding: 0;
+        }
+
+        .firstwatch {
+            display: flex;
+            align-items: center;
+            height: 11rem;
+            cursor: pointer;
+            width: 36rem;
+            background-color: rgb(243, 243, 243);
+            justify-content: center;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px black;
+        }
+
+        .firstwatch:hover .off {
+            color: ghostwhite;
+            background-color: green;
+        }
+
+        .firstwatch img {
+            height: 8rem;
+            margin-right: 2rem;
+            width: 7rem;
+        }
+
+        .price {
+            display: flex;
+            margin: 0px;
+        }
+
+        .contain {
+            margin: 0px;
+        }
+
+        .watchname {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            margin: 3px;
+        }
+
+        .mainprice {
+            text-decoration: line-through;
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        .off {
+            font-size: 12px;
+            border-radius: 6px;
+            text-align: center;
+            color: green;
+            background: transparent;
+            border: 2px solid green;
+            width: 70px;
+        }
+
+        .mainoffercontainer {
+            position: absolute;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .offoffer {
+            margin-top: 5rem;
+            display: flex;
+            background-color: transparent;
+            height: 19rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .offoffer1 {
+            background-color: rgb(255, 68, 0);
+            display: flex;
+            height: 39rem;
+            color: black;
+            margin-top: 18rem;
+            margin-left: -10rem;
+            width: 17rem;
+            justify-content: center;
+            flex-flow: column;
+            text-decoration: none;
+            align-items: center;
+        }
+
+        .offerpersontage {
+            margin-top: 2.8rem;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            display: flex;
+            z-index: 1;
+            background-color: skyblue;
+            height: 9rem;
+            width: 9rem;
+            border-radius: 5rem;
+            border: 2px dotted black;
+        }
+
+        .coverpersontage {
+            background-color: white;
+            height: 10rem;
+            width: 10rem;
+            border-radius: 5rem;
+            margin-right: 0;
+            margin-bottom: 16.5rem;
+            position: absolute;
+        }
+
+        .offerimagemen {
+            border: 2px solid orange;
+            display: flex;
+            height: 12rem;
+            width: 12rem;
+            background-image: url(201.jpeg);
+            background-repeat: no-repeat;
+            background-size: 12rem;
+            border-radius: 7rem;
+            margin-left: 0;
+            margin-top: 7rem;
+            background-position: center;
+        }
+
+        .savename {
+            display: flex;
+            position: absolute;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-right: 0;
+            font-size: 2.8rem;
+            margin-bottom: 31.5rem;
+        }
+
+        .menswatchofferdiscount {
+            display: flex;
+            position: absolute;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 0;
+            font-size: 2rem;
+            width: 9rem;
+            text-align: center;
+            margin-right: 0;
+        }
+
+        .offerbranchlogo {
+            height: 2rem;
+            width: 17rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 37rem;
+            background-color: blue;
+            position: absolute;
+        }
+
+        .offerbranchlogo img {
+            height: 1rem;
+            width: 1.5rem;
+        }
+
+        .offerbranchlogo p {
+            height: 1.5rem;
+            color: white;
+            font-size: 1.2rem;
+            margin-left: 0.5rem;
+        }
+
+        .back {
+            position: sticky;
+            top: 5.5rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <img style="opacity: 50%; margin-left: -8px;
+    position: fixed;
+    margin-top: -8px; z-index: -2;" height="100%" width="100%" src="bg.jpg" />
+    <div class="sticky">
+        <ul class="logo">
+            <li><img id="logo" src="Logo.png" height="30px" width="40px">&nbsp;SKYLONA ENTERPRISE</li>
+
+            <a href="#" class="cart">
+                <li class="fa fa-shopping-cart"><span class="cartnumber">0</span>
+                </li>
+                <li class="cartsign">
+                    Cart</li>
+            </a>
+
+            <a href="#" class="signin">
+                <li class="fa fa-user"></li>
+                <li class="cartsign">
+                    Sign in</li>
+            </a>
+
+        </ul>
+    </div>
+    <a href="index.html">
+        <div class="fa fa-arrow-left back">&nbsp;<b>BACK</b></div>
+    </a>
+    <div class="collection">Men's Collection</div>
+
+    <section class="mainoffercontainer">
+        <div class="offoffer">
+            <div class="offoffer1">
+                <p class="savename">SAVE</p>
+                <div class="coverpersontage"></div>
+                <div class="offerpersontage">
+                    <p>UPTO<br>87% OFF</p>
+                </div>
+                <div class="menswatchofferdiscount">On Men's <br> Watch</div>
+                <div class="offerimagemen"></div>
+                <div class="offerbranchlogo"><img src="Logo.png" alt="Logo">
+                    <p>SKYLONA ENTERPRISE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <section class="container">
+
+        <a href="watch3.html">
+            <div class="firstwatch">
+                <img src="33.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;1,725</b></p>
+                        <p class="off" id="off">70% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch4.html">
+            <div class="firstwatch">
+                <img src="41.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;1,980</b></p>
+                        <p class="off" id="off">72% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch5.html">
+            <div class="firstwatch">
+                <img src="51.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;1,980</b></p>
+                        <p class="off" id="off">72% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch6.html">
+            <div class="firstwatch">
+                <img src="62.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,999</p>
+                        <p class="costprice"><b>&#8377;1,999</b></p>
+                        <p class="off" id="off">72% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch12.html">
+            <div class="firstwatch">
+                <img src="122.jpeg" alt="Skylona Movado Dial Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Movado Dial Stylish & Attractive Analog Watch</p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;1,750</b></p>
+                        <p class="off" id="off">75% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch13.html">
+            <div class="firstwatch">
+                <img src="131.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;1,999</p>
+                        <p class="costprice"><b>&#8377;499</b></p>
+                        <p class="off" id="off">75% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch14.html">
+            <div class="firstwatch">
+                <img src="141.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;1,999</p>
+                        <p class="costprice"><b>&#8377;549</b></p>
+                        <p class="off" id="off">73% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch15.html">
+            <div class="firstwatch">
+                <img src="153.jpeg" alt="Skylona Blue Dial Analog Watch">
+                <div class="contain">
+                    <p>Skylona Blue Dial Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;1.999</p>
+                        <p class="costprice"><b>&#8377;499</b></p>
+                        <p class="off" id="off">75% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch16.html">
+            <div class="firstwatch">
+                <img src="161.jpeg" alt="Skylona Black Dial Analog Watch">
+                <div class="contain">
+                    <p>Skylona Black Dial Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,570</p>
+                        <p class="costprice"><b>&#8377;899</b></p>
+                        <p class="off" id="off">70% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch17.html">
+            <div class="firstwatch">
+                <img src="171.jpeg" alt="Skylona Black Dial Analog Watch">
+                <div class="contain">
+                    <p>Skylona Black Dial Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;1,725</b></p>
+                        <p class="off" id="off">75% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch18.html">
+            <div class="firstwatch">
+                <img src="181.jpeg" alt="Skylona Black Dial Analog Watch">
+                <div class="contain">
+                    <p>Skylona Black Dial Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,570</p>
+                        <p class="costprice"><b>&#8377;899</b></p>
+                        <p class="off" id="off">86% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch19.html">
+            <div class="firstwatch">
+                <img src="191.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;2,125</b></p>
+                        <p class="off" id="off">70% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch20.html">
+            <div class="firstwatch">
+                <img src="201.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;3,825</p>
+                        <p class="costprice"><b>&#8377;880</b></p>
+                        <p class="off" id="off">77% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch21.html">
+            <div class="firstwatch">
+                <img src="211.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;1,1910</b></p>
+                        <p class="off" id="off">73% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch22.html">
+            <div class="firstwatch">
+                <img src="221.jpeg" alt="Skylona Green Dial with Mesh Belt Analog Watch">
+                <div class="contain">
+                    <p>Skylona Green Dial with Mesh Belt Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;1,999</p>
+                        <p class="costprice"><b>&#8377;499</b></p>
+                        <p class="off" id="off">75% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch23.html">
+            <div class="firstwatch">
+                <img src="231.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;1,999</p>
+                        <p class="costprice"><b>&#8377;399</b></p>
+                        <p class="off" id="off">80% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <br>
+    <section class="container">
+        <a href="watch24.html">
+            <div class="firstwatch">
+                <img src="241.jpeg" alt="Skylona Stylish & Attractive Analog Watch">
+                <div class="contain">
+                    <p>Skylona Stylish & Attractive Analog Watch
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                    <div class="price">
+                        <p class="mainprice">&#8377;6,980</p>
+                        <p class="costprice"><b>&#8377;1,725</b></p>
+                        <p class="off" id="off">75% Off</p>
+                    </div>
+                    <input class="watchadd-cart" type="button" value="Add to Cart" onclick="showcart()">
+                    <input class="watchbuynow" type="button" value="Buy Now" onclick="showbuy()">
+                </div>
+            </div>
+        </a>
+    </section>
+
+</body>
+
+</html>

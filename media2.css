@@ -1,0 +1,55 @@
+.logo{
+    height: 10rem;
+    padding-bottom: 4rem;
+}
+
+.signin {
+    margin-left: 10rem;
+    padding-top: 9rem;
+}
+
+.cart {
+    margin-left: 3rem;
+    margin-top: 9rem;
+}
+
+.newarrivalviewall a p {
+    margin-top: 4rem;
+    margin-left: -39rem;
+}
+
+.womenwatchpic {
+    flex-flow: column;
+}
+
+.newwatchpic {
+    flex-flow: column;
+}
+
+.menwatchpic {
+    flex-flow: column;
+}
+
+.watchpic {
+    margin-top: 8rem;
+}
+
+.womenviewall a p {
+    margin-top: 4rem;
+    margin-left: -53rem;
+}
+
+.offoffer2 {
+    margin-left: -29rem;
+    margin-top: 46rem;
+}
+
+.menwatch {
+    margin-top: 25rem;
+    margin-left: 0;
+}
+
+.viewall a p {
+    margin-top: 29rem;
+    margin-left: -53rem;
+}

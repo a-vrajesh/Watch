@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+.changing{
+    transition-property: all;color: #989c9e;
+    transition-duration: 0.3s;
+}
+
+.changing:hover{
+    text-shadow: 0 0 21px white;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.margin{
+    margin-left: 5.5rem;
+}
+
+.mailchange{
+    
+  color:#627482;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.3s;
+    transition-property: all;
+}
+.mailchange:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.container-fluid {
+    overflow: hidden;
+    margin-top: 250px;
+    background: #262626;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+small {
+    font-size: calc(12px + (15 - 16) * ((100vw - 360px) / (1600 - 360))) !important
+}
+.textcolor{
+  color:#627482;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.textcolor:hover{
+    
+  text-decoration: none;
+  color: #ffffff;
+}
+.bold-text {
+    color: #989c9e !important
+}
+.mt-55 {
+     margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ h3 {
+     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .social {
+     font-size: 21px !important
+ }
+
+ .rights {
+     font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+ }
